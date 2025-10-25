@@ -1,6 +1,7 @@
-import { Calendar, User } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Avatar } from "@/components/ui/avatar";
+import { Link } from "react-router-dom";
 
 export interface Post {
   id: string;
@@ -12,6 +13,7 @@ export interface Post {
     avatar: string;
   };
   date: string;
+  content?: string;
 }
 
 interface PostCardProps {
@@ -20,7 +22,8 @@ interface PostCardProps {
 
 export const PostCard = ({ post }: PostCardProps) => {
   return (
-    <Card className="group overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer border-border bg-card">
+    <Link to={`/post/${post.id}`}>
+      <Card className="group overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer border-border bg-card">
       <div className="aspect-video overflow-hidden">
         <img
           src={post.coverImage}
@@ -53,5 +56,6 @@ export const PostCard = ({ post }: PostCardProps) => {
         </div>
       </div>
     </Card>
+    </Link>
   );
 };
