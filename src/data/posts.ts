@@ -1,0 +1,100 @@
+import { Post } from "@/components/PostCard";
+import spaceImage from "@/assets/space-exploration.jpg";
+import libraryImage from "@/assets/library-books.jpg";
+import travelImage from "@/assets/travel-gear.jpg";
+import cityImage from "@/assets/city-night.jpg";
+import coffeeImage from "@/assets/coffee-culture.jpg";
+import breakfastImage from "@/assets/healthy-breakfast.jpg";
+import techImage from "@/assets/tech-lifestyle.jpg";
+import zenImage from "@/assets/zen-garden.jpg";
+
+export const posts: Post[] = [
+  {
+    id: "1",
+    title: "探索未知的星辰大海",
+    excerpt: "今天想和大家分享一些关于宇宙探索的思考。当我们仰望星空，看到的不仅是遥远的星光，更是无限的可能性。每一颗星星都有自己的故事，每一个星系都蕴含着宇宙的奥秘。科学家们通过不懈的努力，让我们对宇宙的了解越来越深入。",
+    coverImage: spaceImage,
+    author: {
+      name: "星空观察者",
+      avatar: "星"
+    },
+    date: "2024年01月15日"
+  },
+  {
+    id: "2",
+    title: "阅读改变人生",
+    excerpt: "书籍是人类进步的阶梯，每一本好书都是一扇通向新世界的大门。我喜欢深夜读书的宁静，也喜欢清晨读书的清新。阅读不仅能丰富我们的知识，更能塑造我们的性格和思想。让我们一起在书海中遨游，发现更好的自己。",
+    coverImage: libraryImage,
+    author: {
+      name: "书虫小姐",
+      avatar: "书"
+    },
+    date: "2024年01月13日"
+  },
+  {
+    id: "3",
+    title: "旅行的意义",
+    excerpt: "旅行不是逃避，而是发现更好的自己。每一次旅行都是一次心灵的礼物，让我们暂时离开熟悉的环境，去感受不同的文化、遇见不同的人、体验不同的生活方式。旅行让我们变得更加包容、更加开放，也更加了解自己想要什么样的生活。",
+    coverImage: travelImage,
+    author: {
+      name: "行者无疆",
+      avatar: "行"
+    },
+    date: "2024年01月12日"
+  },
+  {
+    id: "4",
+    title: "城市夜景摄影技巧分享",
+    excerpt: "夜晚的城市有着独特的魅力，霓虹灯的光影、车流的轨迹、建筑的轮廓，都是摄影师眼中的宝藏。分享几个拍摄城市夜景的小技巧：使用三脚架保持稳定、尝试长曝光捕捉车流光轨、利用黄金时刻、寻找有趣的前景元素。",
+    coverImage: cityImage,
+    author: {
+      name: "镜头诗人",
+      avatar: "镜"
+    },
+    date: "2024年01月14日"
+  },
+  {
+    id: "5",
+    title: "咖啡文化探索",
+    excerpt: "咖啡不仅是一种饮品，更是一种生活态度和文化符号。从豆子的选择到烘焙的温度，从冲泡的方式到饮用的环境，每一个环节都蕴含着咖啡师的艺术。一杯好的咖啡，能让我们在忙碌的生活中找到片刻的宁静和享受。",
+    coverImage: coffeeImage,
+    author: {
+      name: "咖啡爱好者",
+      avatar: "咖"
+    },
+    date: "2024年01月13日"
+  },
+  {
+    id: "6",
+    title: "健康生活从早餐开始",
+    excerpt: "早餐是一天中最重要的一餐，它为我们提供了开始新一天所需的能量。少糖少盐、这是每个都知的理念，在忙碌的都市生活中，我们往往忽略早餐的重要性。只需早起十分钟，而是要吃得营养均衡。分享一些简单又营养的早餐搭配。",
+    coverImage: breakfastImage,
+    author: {
+      name: "简单生活",
+      avatar: "简"
+    },
+    date: "2024年01月11日"
+  },
+  {
+    id: "7",
+    title: "极简生活的哲学",
+    excerpt: "少即是多，这是极简生活的核心理念。在物质充裕的时代，我们往往被太多的选择所困扰。极简不是一味地减少物品，而是保留真正重要的东西。通过断舍离，我们可以让生活变得更加清晰、更加专注，也更加幸福。",
+    coverImage: techImage,
+    author: {
+      name: "极简主义者",
+      avatar: "简"
+    },
+    date: "2024年01月10日"
+  },
+  {
+    id: "8",
+    title: "冥想与正念生活",
+    excerpt: "在快节奏的现代生活中，我们需要学会放慢脚步，感受当下。冥想不是逃避现实，而是更好地面对生活。通过每天十分钟的冥想练习，我们可以培养正念，减轻压力，提高专注力。让我们一起探索内心的宁静，找到生活的平衡。",
+    coverImage: zenImage,
+    author: {
+      name: "正念修行者",
+      avatar: "禅"
+    },
+    date: "2024年01月09日"
+  }
+];
